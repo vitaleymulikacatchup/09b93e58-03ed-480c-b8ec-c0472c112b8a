@@ -7,6 +7,7 @@ import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
 import PatternTokenomics from '@/components/sections/layouts/tokenomics/PatternTokenomics';
 import CentralFAQ from '@/components/sections/layouts/faq/CentralFAQ';
 import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogoEmphasisBackgroundGradient';
+import { LucideDollarSign, LucideUser, LucideNewspaper } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
         <HowToBuy3D title="How to Buy" steps={[{ title: "Step 1", description: "Understand the product", image: "/images/placeholder1.avif", position: "left", isCenter: false }, { title: "Step 2", description: "Choose your plan", image: "/images/placeholder2.avif", position: "center", isCenter: true }, { title: "Step 3", description: "Complete your purchase", image: "/images/placeholder3.avif", position: "right", isCenter: false }]} />
       </div>
       <div id="tokenomics" data-section="tokenomics">
-        <PatternTokenomics title="Tokenomics Overview" description="Understanding our token distribution and usage." kpiItems={[{ value: "60%", description: "Market Liquidity", icon: "LucideDollarSign" }, { value: "25%", description: "Team Allocation", icon: "LucideUser" }, { value: "15%", description: "Reserve Funds", icon: "LucideNewspaper" }]} />
+        <PatternTokenomics title="Tokenomics Overview" description="Understanding our token distribution and usage." kpiItems={[{ value: "60%", description: "Market Liquidity", icon: LucideDollarSign }, { value: "25%", description: "Team Allocation", icon: LucideUser }, { value: "15%", description: "Reserve Funds", icon: LucideNewspaper }]} />
       </div>
       <div id="faq" data-section="faq">
         <CentralFAQ items={[{ title: "What is Xeven?", content: "Xeven is a comprehensive SaaS platform that provides tools for managing tasks effectively." }, { title: "How do I sign up?", content: "Simply click on the 'Get started' button on the homepage to create an account." }, { title: "What payment methods do you accept?", content: "We accept all major credit cards and PayPal." }, { title: "Can I cancel my subscription?", content: "Yes, you can cancel your subscription at any time through the account settings." }]} />
