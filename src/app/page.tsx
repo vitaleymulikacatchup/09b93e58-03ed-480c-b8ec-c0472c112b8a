@@ -17,7 +17,8 @@ export default function Home() {
           logoAlt="Xeven Logo"
           leftButtonText="Menu"
           rightButtonText="Contact"
-          buttonText="Get started"
+          onLeftButtonClick={() => console.log('Menu clicked')}
+          onRightButtonClick={() => console.log('Contact clicked')}
           className="text-white"
           containerClassName="flex justify-between items-center"
         />
